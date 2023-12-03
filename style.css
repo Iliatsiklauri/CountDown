@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla:ital@0;1&family=Kumbh+Sans&family=Montserrat&family=Poppins&family=Red+Hat+Text&family=Space+Mono&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img1 {
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 168px;
+}
+.img2 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.img3 {
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  bottom: 60px;
+  cursor: pointer;
+}
+
+body {
+  background: url(./assets/Rectangle.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  gap: 54px;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Red Hat Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.136px;
+  text-transform: uppercase;
+  width: 327px;
+  margin-top: -150px;
+}
+.clock {
+  width: 327px;
+  height: 92px;
+  display: flex;
+  gap: 16px;
+}
+.clock p {
+  color: #8385a9;
+  text-align: center;
+  font-family: Red Hat Text;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.959px;
+  width: 70px;
+  height: 12px;
+  margin-top: 9px;
+}
+img[alt='rightBall'] {
+  position: absolute;
+  bottom: 47%;
+  right: 0;
+}
+img[alt='leftBall'] {
+  position: absolute;
+  bottom: 47%;
+  left: 0;
+}
+img[alt='line'] {
+  position: absolute;
+  bottom: 50%;
+  z-index: 1;
+  left: 0;
+}
+.number {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  margin-bottom: 35px;
+  margin-left: 10px;
+  color: #fb5e84;
+  text-align: center;
+  font-family: Red Hat Text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -1.08px;
+  width: 48px;
+  height: 38px;
+}
+.box {
+  position: relative;
+  width: 70px;
+  height: 71px;
+  align-items: center;
+  margin-bottom: 30;
+}
+.newBottom {
+  display: none;
+}
+.newBack {
+  display: none;
+}
+@media screen and (width >= 1440px) {
+  body {
+    background: url(./assets/Rectangle.svg);
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    width: 431px;
+  }
+  .clock p {
+    width: 148px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #8385a9;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.919px;
+  }
+  .img1 {
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
+  .newBack {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+  .newBottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  .img3 {
+    z-index: 4;
+    margin-left: 150px;
+  }
+  .clock {
+    width: 688px;
+    height: 184px;
+  }
+  .box {
+    width: 148px;
+    height: 150px;
+  }
+  img[alt='ilia'] {
+    width: 148px;
+    height: 150px;
+  }
+  .box h1 {
+    color: #fb5e84;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px; /* 88.75% */
+    letter-spacing: -2.4px;
+    top: 190px;
+    left: 20px;
+  }
+}
